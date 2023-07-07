@@ -1,0 +1,26 @@
+<!--  
+<mat-spinner *ngIf="data.length === 0"></mat-spinner>
+-->
+
+<ngx-charts-line-chart 
+  [scheme]="'cool'"
+  [results]= "data"
+  [xAxis]="true"
+  [yAxis]="true"
+  [legend]="true"
+  [showXAxisLabel]="false"
+  [showYAxisLabel]="false"
+  xAxisLabel="name"
+  yAxisLabel="value"
+  [timeline]="true"
+  [autoScale]="true"
+  [showGridLines]="false"
+  
+>
+<ng-template #tooltipTemplate let-model="model">
+  <div class="tooltip-container">
+    <p>{{ model.name | date: 'full' }}</p>
+    <p>{{ model.value }}</p>
+  </div>
+</ng-template>
+</ngx-charts-line-chart>

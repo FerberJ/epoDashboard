@@ -1,0 +1,4 @@
+export const environment = {
+    authorizationToken: 'c015aea60f0563b0236fb566897fd50fee84d8ffe7cbdbe2c3522b7423f848bf1075ddffbbac8a94e1afaaa99db29660de9093687d99956bfb0d99491d62913c13a91207122844624c0f6bb272ae3ef41c388c6e32bc01100a84e757f23ef0bf04f71c36c46c44279774bfa11585d3bd9378fcba5e31b0fc0b40b7f5711b57f8',
+    apiUrl: 'https://epo.pettinaro.xyz/api',
+};
