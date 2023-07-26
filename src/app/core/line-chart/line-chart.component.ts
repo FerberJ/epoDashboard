@@ -40,13 +40,14 @@ export class LineChartComponent implements OnInit {
 
   ngOnInit(): void {
 
-    interval(1000).subscribe(() => {
+    interval(10000).subscribe(() => {
     this.dataSubscription = this.lineChartService
-      .getTemperatureData('Strömung')
+      .getTemperatureData()
       .subscribe((data: any) => {
         this.data = data;
+        
 
-        console.log(JSON.stringify(this.data));
+        console.log(data);
       });
     });
     
