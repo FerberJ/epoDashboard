@@ -8,11 +8,14 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LineChartComponent } from './core/line-chart/line-chart.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { HeaderComponent } from './core/header/header.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LineChartComponent
+    LineChartComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     BrowserAnimationsModule,
     NgxChartsModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

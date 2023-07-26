@@ -1,6 +1,10 @@
-<h1>Temperatur</h1>
-<div style="width: 500px;">
-  <ngx-charts-line-chart
+<h1>Summary</h1>
+
+<div style="width: 350px;">
+
+
+  
+  <ngx-charts-line-chart 
     [scheme]="'cool'"
     [results]="data"
     [xAxis]="true"
@@ -11,14 +15,9 @@
     xAxisLabel="name"
     yAxisLabel="value"
     [timeline]="true"
-    [autoScale]="true"
+    [autoScale]="false"
     [showGridLines]="false"
   >
-    <ng-template #tooltipTemplate let-model="model">
-      <div class="tooltip-container">
-        <p>{{ model.name | date : "long" }}</p>
-        <p>{{ model.value }}</p>
-      </div>
-    </ng-template>
+
   </ngx-charts-line-chart>
 </div>
