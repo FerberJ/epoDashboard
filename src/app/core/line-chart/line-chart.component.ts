@@ -54,4 +54,8 @@ export class LineChartComponent implements OnInit {
 
   }
 
+  dataLabelFormatterVBC(tooltipText: any) {
+    return "$" + tooltipText + " trillion";
+  }
+
 }
