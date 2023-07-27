@@ -12,13 +12,16 @@ import { HeaderComponent } from './core/header/header.component';
 import {MatCardModule} from '@angular/material/card';
 import { GaugeComponent } from './core/gauge/gauge.component';
 import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './core/footer/footer.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     LineChartComponent,
     HeaderComponent,
-    GaugeComponent
+    GaugeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     HttpClientModule,
     MatProgressSpinnerModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
