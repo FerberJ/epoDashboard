@@ -20,7 +20,7 @@ export type ApiResponse = [
   providedIn: 'root'
 })
 export class LineChartService {
-  sensorData: Object | null | undefined;
+  //sensorData: Object | null | undefined;
 
   constructor(private httpClient: HttpClient) { }
 

@@ -10,12 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { HeaderComponent } from './core/header/header.component';
 import {MatCardModule} from '@angular/material/card';
+import { GaugeComponent } from './core/gauge/gauge.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     LineChartComponent,
-    HeaderComponent
+    HeaderComponent,
+    GaugeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     NgxChartsModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
