@@ -14,6 +14,7 @@ import { GaugeComponent } from './core/gauge/gauge.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './core/footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
+import { VideoComponent } from './core/video/video.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
     LineChartComponent,
     HeaderComponent,
     GaugeComponent,
-    FooterComponent
+    FooterComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

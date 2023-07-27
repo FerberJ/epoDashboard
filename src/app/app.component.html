@@ -1,23 +1,46 @@
-<header style="width: 100%;">
-  <app-header></app-header>
-</header>
-<body>
-    <mat-card style="background-color: #f4f4f5; ">
-        <mat-card-content style="display: flex; justify-content: center; align-items: center;">
-            <app-gauge style="scale: 1;"></app-gauge>
-        </mat-card-content>
-      </mat-card>
-<br>
-  <mat-card style="background-color: #f4f4f5; ">
-    <mat-card-content style="display: flex; justify-content: center; align-items: center;">
+<body style="display: flex; justify-content: center; ">
+  <div style="max-width: 850px; min-width: 380px">
+    <br />
+    <mat-card style="background-color: #94223f; height: 100px;">
+      <mat-card-content
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <app-header></app-header>
+      </mat-card-content>
+    </mat-card>
+    <br />
+    <mat-card style="background-color: #f4f4f5">
+      <mat-card-content
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <app-gauge style="scale: 1"></app-gauge>
+      </mat-card-content>
+    </mat-card>
+    <br />
+    <mat-card style="background-color: #f4f4f5">
+      <mat-card-content
+        style="display: flex; justify-content: center; align-items: center"
+      >
         <app-line-chart></app-line-chart>
-    </mat-card-content>
-  </mat-card>
-  <br>
-  <mat-card style="background-color: #f4f4f5; ">
-    <mat-card-content style="display: flex; justify-content: center; align-items: center;">
-      <app-footer></app-footer>
-    </mat-card-content>
-  </mat-card>
-</body>
+      </mat-card-content>
+    </mat-card>
+    <br />
 
+    <mat-card style="background-color: #f4f4f5">
+      <mat-card-content
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <app-video></app-video>
+      </mat-card-content>
+    </mat-card>
+
+    <br />
+    <mat-card style="background-color: #f4f4f5">
+      <mat-card-content
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <app-footer></app-footer>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>
