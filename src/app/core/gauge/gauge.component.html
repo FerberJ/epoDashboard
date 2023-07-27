@@ -1,23 +1,21 @@
 <h1>Status</h1>
 <mat-card
-  *ngIf="isRunning"
- style="background-color: lightgreen; width: 350px; display: flex; align-items: center;">
-  <p style="display: flex; align-items: center; margin: 0; padding: 5px">
-    <mat-icon style="color: green; margin-right: 2px; scale: 0.7;">check_circle_outline</mat-icon>
+  *ngIf="isRunning" class="running">
+  <p>
+    <mat-icon class="runningIcon">check_circle_outline</mat-icon>
     EPo produziert Strom
   </p>
 </mat-card>
 
 <mat-card
-  *ngIf="!isRunning"
- style="background-color: lightcoral; width: 350px; display: flex; align-items: center;">
-  <p style="display: flex; align-items: center; margin: 0; padding: 5px;">
-    <mat-icon style="color: red; margin-right: 2px; scale: 0.7;">error_outline</mat-icon>
+  *ngIf="!isRunning" class="stopped">
+  <p>
+    <mat-icon class="stoppedIcon">error_outline</mat-icon>
     EPo nicht aktiv
   </p>
 </mat-card>
 
-<div *ngIf="isRunning" style="width: 350px">
+<div *ngIf="isRunning">
   <ngx-charts-gauge
     [scheme]="'cool'"
     [results]="data"

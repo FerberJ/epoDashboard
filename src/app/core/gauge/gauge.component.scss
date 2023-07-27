@@ -1,0 +1,36 @@
+.running {
+    background-color: lightgreen; 
+    width: 350px; 
+    display: flex; 
+    align-items: center;
+}
+
+.runningIcon {
+    color: green; 
+    margin-right: 2px; 
+    scale: 0.7;
+}
+
+.stopped {
+    background-color: lightcoral; 
+    width: 350px; 
+    display: flex; 
+    align-items: center;
+}
+
+.stoppedIcon {
+    color: red; 
+    margin-right: 2px; 
+    scale: 0.7;
+}
+
+p {
+    display: flex; 
+    align-items: center; 
+    margin: 0; 
+    padding: 5px;
+}
+
+div {
+    width: 350px;
+}

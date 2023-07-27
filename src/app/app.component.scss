@@ -1,3 +1,30 @@
+mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  
-  
+.headerCard {
+    background-color: #94223f;
+    height: 100px;
+}
+
+.contentCard {
+    background-color: #f4f4f5;
+}
+
+
+.frame1 {
+    max-width: 850px; 
+    min-width: 380px;
+}
+
+.frame2 {
+    padding-left: 10px; padding-right: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+

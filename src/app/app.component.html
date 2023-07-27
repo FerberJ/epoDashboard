@@ -1,46 +1,40 @@
-<body style="display: flex; justify-content: center; ">
-  <div style="max-width: 850px; min-width: 380px">
-    <br />
-    <mat-card style="background-color: #94223f; height: 100px;">
-      <mat-card-content
-        style="display: flex; justify-content: center; align-items: center"
-      >
+<body>
+  <div class="frame1">
+    <mat-card class="headerCard">
+      <mat-card-content>
         <app-header></app-header>
       </mat-card-content>
     </mat-card>
-    <br />
-    <div style="padding-left: 10px; padding-right: 10px;">
-    <mat-card style="background-color: #f4f4f5;">
-      <mat-card-content
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <app-gauge style="scale: 1"></app-gauge>
-      </mat-card-content>
-    </mat-card>
-    <br />
-    <mat-card style="background-color: #f4f4f5">
-      <mat-card-content
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <app-line-chart></app-line-chart>
-      </mat-card-content>
-    </mat-card>
-    <br />
-
-    <mat-card style="background-color: #f4f4f5">
-      <mat-card-content
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <app-video></app-video>
-      </mat-card-content>
-    </mat-card>
-  </div>
 
     <br />
-    <mat-card style="background-color: #f4f4f5">
-      <mat-card-content
-        style="display: flex; justify-content: center; align-items: center"
-      >
+
+    <div class="frame2">
+      <mat-card class="contentCard">
+        <mat-card-content>
+          <app-gauge></app-gauge>
+        </mat-card-content>
+      </mat-card>
+
+      <br />
+
+      <mat-card class="contentCard">
+        <mat-card-content>
+          <app-line-chart></app-line-chart>
+        </mat-card-content>
+      </mat-card>
+
+      <br />
+
+      <mat-card class="contentCard">
+        <mat-card-content>
+          <app-video></app-video>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <br />
+    <mat-card class="contentCard">
+      <mat-card-content>
         <app-footer></app-footer>
       </mat-card-content>
     </mat-card>
