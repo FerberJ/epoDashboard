@@ -15,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './core/footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
 import { VideoComponent } from './core/video/video.component';
+import { TeamComponent } from './core/team/team.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { VideoComponent } from './core/video/video.component';
     HeaderComponent,
     GaugeComponent,
     FooterComponent,
-    VideoComponent
+    VideoComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

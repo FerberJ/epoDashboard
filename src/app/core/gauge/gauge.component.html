@@ -1,35 +1,40 @@
-<h1>Status</h1>
-<mat-card
-  *ngIf="isRunning" class="running">
-  <p>
-    <mat-icon class="runningIcon">check_circle_outline</mat-icon>
-    EPo produziert Strom
-  </p>
-</mat-card>
 
-<mat-card
-  *ngIf="!isRunning" class="stopped">
-  <p>
-    <mat-icon class="stoppedIcon">error_outline</mat-icon>
-    EPo nicht aktiv
-  </p>
-</mat-card>
+    <h1>Status</h1>
+    <mat-card *ngIf="isRunning" class="running">
+      <p>
+        <mat-icon class="runningIcon">check_circle_outline</mat-icon>
+        EPo produziert Strom
+      </p>
+    </mat-card>
 
-<div *ngIf="isRunning">
-  <ngx-charts-gauge style="width: 350px;"
-    [scheme]="'cool'"
-    [results]="data"
-    [legend]="false"
-    [animations]="true"
-    xAxisLabel="name"
-    yAxisLabel="value"
-    [min]="0"
-    [max]="50"
-    [units]= '"km/h"'
-    [bigSegments]="10"
-    [smallSegments]="5"
-    [startAngle]="-100"
-    [angleSpan]="200"
+    <mat-card *ngIf="!isRunning" class="stopped">
+      <p>
+        <mat-icon class="stoppedIcon">error_outline</mat-icon>
+        EPo nicht aktiv
+      </p>
+    </mat-card>
+    <p class="information">
+      Wenn das EPo Floss aktiv ist, wird die aktuelle Geschwindigkeit des Schaufelrades angezeigt. 
+    </p>
+    
+    <div *ngIf="isRunning" >
+      <ngx-charts-gauge
+        class="mygauge"
+        [scheme]="'cool'"
+        [results]="data"
+        [legend]="false"
+        [animations]="true"
+        xAxisLabel="name"
+        yAxisLabel="value"
+        [min]="0"
+        [max]="50"
+        [units]="'km/h'"
+        [bigSegments]="10"
+        [smallSegments]="5"
+        [startAngle]="-100"
+        [angleSpan]="200"
       >
-  </ngx-charts-gauge>
-</div>
+      </ngx-charts-gauge>
+    </div>
+
+

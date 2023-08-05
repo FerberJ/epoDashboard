@@ -16,15 +16,20 @@ export class GaugeComponent {
   constructor(private gaugeService: GaugeService,) { }
 
   ngOnInit(): void {
-    
+    this.dataSubscription = this.gaugeService
+    .getCurrentData()
+    .subscribe((data: any) => {
+      this.data = data;
+      this.isRunning = (new Date().getTime() - data[0].date.getTime()) <= 60000;
+    });
+
+     
     interval(5000).subscribe(() => {
       this.dataSubscription = this.gaugeService
         .getCurrentData()
         .subscribe((data: any) => {
           this.data = data;
           this.isRunning = (new Date().getTime() - data[0].date.getTime()) <= 60000;
-  
-          console.log(this.isRunning);
         });
       });
     

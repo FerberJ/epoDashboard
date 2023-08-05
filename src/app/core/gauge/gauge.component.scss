@@ -18,6 +18,12 @@
     align-items: center;
 }
 
+.information {
+    margin-top: 10px;
+    width: 350px;
+    text-align: center;
+}
+
 .stoppedIcon {
     color: red; 
     margin-right: 2px; 
@@ -33,4 +39,15 @@ p {
 
 div {
     width: 350px;
+}
+
+.mygauge {
+    width: 350px;
+    height: 200px;
+    border-radius: 1px;
+    border-color: red;
+}
+
+.contentCard {
+    background-color: #f4f4f5;
 }
