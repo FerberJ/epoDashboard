@@ -29,7 +29,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/EPo.ico",
               "src/assets"
             ],
             "styles": [
@@ -99,7 +99,7 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/EPo.ico",
               "src/assets"
             ],
             "styles": [
