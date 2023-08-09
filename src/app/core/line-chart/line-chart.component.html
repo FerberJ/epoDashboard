@@ -16,7 +16,7 @@
     [showGridLines]="false"
   >
     <ng-template #seriesTooltipTemplate let-models="model">
-      Temperatur
+      {{models[0].series}}
       <ng-container *ngFor="let model of models">
         <div class="container">
         <div class='box' [ngStyle]="{'background-color': model.color}"></div>{{ model.value }} °C
