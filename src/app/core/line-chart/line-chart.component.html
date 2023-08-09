@@ -1,5 +1,8 @@
 <h1>History</h1>
-<p class="information">Zeigt die Temperatur vom Fluss auf dem sich das EPo Floss im Zeitverlauf befindet.</p>
+<p class="information">
+  Zeigt die Temperatur vom Fluss auf dem sich das EPo Floss im Zeitverlauf
+  befindet.
+</p>
 <div>
   <ngx-charts-line-chart
     [scheme]="'cool'"
@@ -16,18 +19,22 @@
     [showGridLines]="false"
   >
     <ng-template #seriesTooltipTemplate let-models="model">
-      {{models[0].series}}
+      <a>{{ models[0].series }}</a>
       <ng-container *ngFor="let model of models">
         <div class="container">
-        <div class='box' [ngStyle]="{'background-color': model.color}"></div>{{ model.value }} °C
-      </div>
+          <div
+            class="box"
+            [ngStyle]="{ 'background-color': model.color }"
+          ></div>
+          <a>{{ model.value }} °C</a>
+        </div>
       </ng-container>
     </ng-template>
 
     <ng-template #tooltipTemplate let-model="model">
-      {{ model.value }} °C
+      <a class="largerText">{{ model.value }} °C</a>
       <br />
-      {{ model.name | date : "dd.MM.yyyy HH:mm:ss" }}
+      <a>{{ model.name | date : "dd.MM.yy HH:mm:ss" }}</a>
     </ng-template>
   </ngx-charts-line-chart>
 </div>
