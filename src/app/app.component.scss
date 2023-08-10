@@ -22,17 +22,13 @@ mat-card-content {
     width: 400px;
     box-sizing: border-box;
     margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-
-.frame1 {
-    //max-width: 850px; 
-    //min-width: 380px;
-}
 
 .frame2 {
-    padding-left: 10px; padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
