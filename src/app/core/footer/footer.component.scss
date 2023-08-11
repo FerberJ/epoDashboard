@@ -8,11 +8,13 @@
 }
 
 .item1 {
+  padding-left: 10px;
   grid-column: 1 / span 2;
   grid-row: 1;
 }
 
 .item2 {
+  padding-left: 10px;
   grid-column: 1 / span 2;
   grid-row: 2;
 }
@@ -25,6 +27,7 @@
 
 img {
   height: 100px;
+  margin-right: 10px;
 }
 
 button {
